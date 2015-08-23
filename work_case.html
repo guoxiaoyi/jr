@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="javascript/modernizr-2.7.2.js"></script>
+</head>
+<body>
+  <div class="logo"><img src="images/logo.png" alt="" class="logo-black"></div>
+  <!-- ============ nav ============ -->
+  <div class="nav-button logo-black"> <!-- nav button -->
+    <div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> <!-- /nav button -->
+
+
+  <div class="nav text-center">
+    <img src="images/logo.png" alt="" class="nav-logo ">
+    <div class="close"></div>
+      <ul class="col-lg-7">
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="about">
+          <a href="#" class="border col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <img src="images/nav/nav-1.png" alt="" class="title-en">
+            <img src="images/nav/nav-line.png" alt="" class="line">
+            <img src="images/nav/nav-1-1.png" alt="" class="title-zn">
+          </a>
+        </li>
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="work">
+          <a href="#" class="border col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <img src="images/nav/nav-2.png" alt="" class="title-en">
+            <img src="images/nav/nav-line.png" alt="" class="line">
+            <img src="images/nav/nav-2-1.png" alt="" class="title-zn">
+          </a>
+        </li>
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="contact">
+          <a href="contact.html" class="border col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <img src="images/nav/nav-3.png" alt="" class="title-en">
+            <img src="images/nav/nav-line.png" alt="" class="line">
+            <img src="images/nav/nav-3-1.png" alt="" class="title-zn">
+          </a>
+        </li>
+      </ul>
+  </div>
+  <!-- ============ nav ============ -->
+  <div class="clr"></div>
+
+  <div class="work_case_title">
+    <img src="images/work_case.jpg" alt="">
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">VIS设计</div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">包装设计</div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">画册设计</div>
+  <div class="clr"></div>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+  <a href="#" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
+
+
+  <div class="index-content text-center">
+    <img src="images/index-content.png" alt="" class="revealOnScroll" data-animation="fadeInUp" data-timeout="500">
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left address">
+        <h4>Address</h4>
+        辽宁省大连市高新园区黄浦路720号<br>创意孵化园7F
+        Dalian City, Liaoning Province, Huangpu City,<br> Road 720 creative incubator Park 7F
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left QRcode-1">
+        <img src="images/d.jpg" alt="">
+        <br>微信二维码（订阅号）
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left QRcode-2">
+        <img src="images/f.jpg" alt="">
+        <br>微信二维码（服务号）
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(".nav-button").click(function(event) {
+      $(".nav").fadeIn();
+    });
+    $(".close").click(function(event) {
+      $(".nav").fadeOut();
+    });
+    $(function() {
+
+      var $window           = $(window),
+          win_height_padded = $window.height() * 1.1,
+          isTouch           = Modernizr.touch;
+
+      if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+      $window.on('scroll', revealOnScroll);
+
+      function revealOnScroll() {
+        var scrolled = $window.scrollTop(),
+            win_height_padded = $window.height() * 1.1;
+
+        // Showed...
+        $(".revealOnScroll:not(.animated)").each(function () {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+
+          if (scrolled + win_height_padded > offsetTop) {
+            if ($this.data('timeout')) {
+              window.setTimeout(function(){
+                $this.addClass('animated show ' + $this.data('animation'));
+              }, parseInt($this.data('timeout'),10));
+            } else {
+              $this.addClass('animated show ' + $this.data('animation'));
+            }
+          }
+        });
+        // Hidden...
+       $(".revealOnScroll.animated").each(function (index) {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+          if (scrolled + win_height_padded < offsetTop) {
+            $(this).removeClass('animated show ' + $this.data('animation'))
+          }
+        });
+      }
+
+      revealOnScroll();
+    });
+  </script>
+</body>
+</html>
