@@ -1014,10 +1014,6 @@ ul {
   margin: 0px;
   padding: 0px; }
 
-.index-background-1, .index-background-2, .contact-background-1 {
-  width: 100%;
-  height: 100%; }
-
 .text-center {
   text-align: center; }
 
@@ -1039,6 +1035,10 @@ ul {
 .margin {
   margin: 30px 0px; }
 
+.index-background-1, .index-background-2, .contact-background-1, .about-background-1 {
+  width: 100%;
+  height: 100%; }
+
 .index-background-1 {
   background: url(../images/index-1.jpg) no-repeat center center fixed;
   background-size: cover; }
@@ -1059,6 +1059,16 @@ ul {
 .contact-background-1 {
   background: url(../images/contact-1.png) no-repeat center center fixed;
   background-size: cover; }
+
+.about-background-1 {
+  background: url(../images/about-1.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  .about-background-1 img {
+    position: absolute;
+    left: 50%;
+    margin-left: -50%;
+    top: 50%;
+    margin-top: -25%; }
 
 .nav-button {
   position: absolute;
@@ -1241,6 +1251,13 @@ ul {
   filter: grayscale(1); }
   .work_case_img img:hover {
     -webkit-animation: WorkCase 1s linear forwards; }
+
+.ceo .ceo-wrap {
+  min-width: 857px;
+  width: 50%; }
+.ceo .ceo-img {
+  position: absolute;
+  bottom: 0px; }
 
 @-webkit-keyframes spin {
   0% {
