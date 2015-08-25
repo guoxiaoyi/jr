@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-
+    $('.load-page').hide()
     $(".nav-button").click(function(event) {
       $(".nav").fadeIn();
     });

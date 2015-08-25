@@ -20,6 +20,31 @@
     width:100%;
     margin:30px 0px;
   }
+  .nav .nav-logo, .logo img{
+    width:(325px / 2);
+  }
+  .logo{
+    width:(325px / 2);
+    padding-top: 10px;
+  }
+  .nav .nav-logo{
+    margin: 20px auto;
+  }
+  .nav-button{
+    width:40px;
+    height:40px;
+    div{
+      height:16px;
+      margin-top:-8px;
+      span{
+        height:16px;
+      }
+    }
+  }
+  .nav .close{
+    width:40px;
+    height:40px;
+  }
 
   .nav ul {
     width: 90%;
@@ -43,6 +68,9 @@
         left: 50%;
         margin-top: -(82px / 4);
         margin-left: -(80px / 4);
+      }
+      .border{
+        height:90%;
       }
       &#about{
         .title-en{
@@ -84,6 +112,11 @@
   }
   .index-background-1, .index-background-2{
     height:50%;
+  }
+  .index-background-1, .index-background-2, .index-content{
+    img{
+      width:50%;
+    }
   }
   .index-about {
     h4{
