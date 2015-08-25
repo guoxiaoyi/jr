@@ -184,12 +184,7 @@ ul{margin:0px;padding:0px;}
       .title-en{
         margin-top:35px;
       }
-      .title-zn{
-        position: absolute;
-        bottom: 65px;
-        left:50%;
-        margin-left: -(144px/2);
-      }
+
       &:hover{
         .border{
           -webkit-animation: BorderBlack 0.5s linear forwards;
@@ -199,6 +194,14 @@ ul{margin:0px;padding:0px;}
         }
       }
     }
+  }
+}
+@media (min-width: 768px) {
+  .title-zn{
+    position: absolute;
+    bottom: 65px;
+    left:50%;
+    margin-left: -(144px/2);
   }
 }
 .color-gray{
@@ -290,6 +293,7 @@ ul{margin:0px;padding:0px;}
 }
 .contact-right{
   font: 14px/28px Microsoft Yahei;
+  padding-left:50px;
   h3{
     font-size: 40px;
     font-weight: bold;
@@ -336,4 +340,8 @@ ul{margin:0px;padding:0px;}
 }
 .ceo-info{
   padding-top:160px;
+}
+.address_img{
+  padding: 10% 0px;
+  text-align: center;
 }
