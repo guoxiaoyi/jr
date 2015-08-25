@@ -1062,7 +1062,8 @@ ul {
 
 .about-background-1 {
   background: url(../images/about-1.jpg) no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .about-background-1 img {
     position: absolute;
     left: 50%;
@@ -1107,6 +1108,7 @@ ul {
   height: 31px;
   position: absolute;
   top: 5%;
+  z-index: 100;
   left: 3.2%; }
 
 .nav {
@@ -3535,6 +3537,15 @@ Copyright (c) 2015 Daniel Eden
   .nav ul {
     width: 90%; }
     .nav ul li {
-      height: 30%; } }
+      height: 30%; }
+
+  .about-background-1 {
+    height: 50%; }
+    .about-background-1 img {
+      position: absolute;
+      left: 50%;
+      margin-left: -50%;
+      top: 50%;
+      margin-top: -25%; } }
 
 /*# sourceMappingURL=bootstrap.css.map */

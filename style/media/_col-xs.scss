@@ -27,5 +27,13 @@
       }
   }
   .about-background-1{
+    height:50%;
+    img{
+      position: absolute;
+      left:50%;
+      margin-left:-(100% / 2);
+      top:50%;
+      margin-top:-(50%/2);
+    }
   }
 }

@@ -57,6 +57,7 @@ ul{margin:0px;padding:0px;}
 .about-background-1{
   background:url(../images/about-1.jpg) no-repeat center center fixed;
   background-size:cover;
+  position: relative;
   img{
     position: absolute;
     left:50%;
@@ -107,6 +108,7 @@ ul{margin:0px;padding:0px;}
   height: 31px;
   position: absolute;
   top: 5%;
+  z-index: 100;
   left: (1920 / 60)*0.1%;
 }
 .nav{
