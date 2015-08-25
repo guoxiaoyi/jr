@@ -26,6 +26,17 @@
         height:30%;
       }
   }
+  .index-background-1, .index-background-2{
+    height:50%;
+  }
+  .index-about {
+    h4{
+      font-size:20px;
+    }
+    span{
+      line-height: 18px;
+    }
+  }
   .about-background-1{
     height:50%;
     img{
@@ -34,6 +45,7 @@
       margin-left:-(100% / 2);
       top:50%;
       margin-top:-(50%/2);
+      z-index: 200;
     }
   }
 }

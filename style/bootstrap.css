@@ -1037,15 +1037,18 @@ ul {
 
 .index-background-1, .index-background-2, .contact-background-1, .about-background-1 {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .index-background-1 {
   background: url(../images/index-1.jpg) no-repeat center center fixed;
   background-size: cover; }
-  .index-background-1 div {
-    width: 100%;
-    height: 100%;
-    background: url(../images/index-1-1.png) no-repeat center center fixed; }
+  .index-background-1 .img {
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    top: 50%;
+    margin-top: -12.5%; }
 
 .index-background-2 {
   background: url(../images/index-2.jpg) no-repeat center center;
@@ -1053,8 +1056,9 @@ ul {
   line-height: 100%;
   background-size: cover; }
   .index-background-2 img {
-    vertical-align: middle;
-    display: inline-block; }
+    vertical-align: middle; }
+  .index-background-2 img.img-2 {
+    margin: 5% 0px; }
 
 .contact-background-1 {
   background: url(../images/contact-1.png) no-repeat center center fixed;
@@ -1078,7 +1082,7 @@ ul {
   width: 60px;
   height: 60px;
   background: #FFF;
-  z-index: 10;
+  z-index: 999;
   cursor: pointer; }
   .nav-button div {
     width: 18px;
@@ -1117,7 +1121,7 @@ ul {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 1000;
   top: 0px;
   left: 0px;
   background: #ff3c54; }
@@ -3539,6 +3543,14 @@ Copyright (c) 2015 Daniel Eden
     .nav ul li {
       height: 30%; }
 
+  .index-background-1, .index-background-2 {
+    height: 50%; }
+
+  .index-about h4 {
+    font-size: 20px; }
+  .index-about span {
+    line-height: 18px; }
+
   .about-background-1 {
     height: 50%; }
     .about-background-1 img {
@@ -3546,6 +3558,7 @@ Copyright (c) 2015 Daniel Eden
       left: 50%;
       margin-left: -50%;
       top: 50%;
-      margin-top: -25%; } }
+      margin-top: -25%;
+      z-index: 200; } }
 
 /*# sourceMappingURL=bootstrap.css.map */

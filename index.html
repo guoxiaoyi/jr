@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style/bootstrap.css">
   <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="javascript/modernizr-2.7.2.js"></script>
+  <script type="text/javascript" src="javascript/application.js"></script>
 </head>
 <body>
   <div class="logo"><img src="images/logo.png" alt=""></div>
@@ -52,7 +52,7 @@
 
 
   <div class="index-background-1">
-    <div class="revealOnScroll" data-animation="fadeInUp" data-timeout="400"></div>
+    <img src="images/index-1-1.png" class="img revealOnScroll" data-animation="fadeInUp" data-timeout="400">
   </div>
 
   <div class="index-about text-center">
@@ -63,9 +63,13 @@
   </div>
 
   <div class="index-background-2 text-center overHidden" >
-    <img src="images/index-2-1.png" alt="" class="img-1 revealOnScroll" data-animation="fadeInUp" data-timeout="800"><br>
-    <img src="images/index-2-2.png" alt="" class="img-2 revealOnScroll" data-animation="bounceInLeft" data-timeout="1200"><br>
-    <img src="images/index-2-3.png" alt="" class="img-3 revealOnScroll" data-animation="fadeInUp" data-timeout="1600"><br>
+    <div style="width:100%;height:100%;display:table">
+      <div style="display:table-cell;vertical-align:middle;">
+        <img src="images/index-2-1.png" alt="" class="img-1 revealOnScroll" data-animation="fadeInUp" data-timeout="800"><br>
+        <img src="images/index-2-2.png" alt="" class="img-2 revealOnScroll" data-animation="bounceInLeft" data-timeout="1200"><br>
+        <img src="images/index-2-3.png" alt="" class="img-3 revealOnScroll" data-animation="fadeInUp" data-timeout="1600"><br>
+      </div>
+    </div>
   </div>
 
 
@@ -91,53 +95,6 @@
     </div>
   </div>
   <script type="text/javascript">
-    $(".nav-button").click(function(event) {
-      $(".nav").fadeIn();
-    });
-    $(".close").click(function(event) {
-      $(".nav").fadeOut();
-    });
-    $(function() {
-
-      var $window           = $(window),
-          win_height_padded = $window.height() * 1.1,
-          isTouch           = Modernizr.touch;
-
-      if (isTouch) { $('.revealOnScroll').addClass('animated'); }
-
-      $window.on('scroll', revealOnScroll);
-
-      function revealOnScroll() {
-        var scrolled = $window.scrollTop(),
-            win_height_padded = $window.height() * 1.1;
-
-        // Showed...
-        $(".revealOnScroll:not(.animated)").each(function () {
-          var $this     = $(this),
-              offsetTop = $this.offset().top;
-
-          if (scrolled + win_height_padded > offsetTop) {
-            if ($this.data('timeout')) {
-              window.setTimeout(function(){
-                $this.addClass('animated show ' + $this.data('animation'));
-              }, parseInt($this.data('timeout'),10));
-            } else {
-              $this.addClass('animated show ' + $this.data('animation'));
-            }
-          }
-        });
-        // Hidden...
-       $(".revealOnScroll.animated").each(function (index) {
-          var $this     = $(this),
-              offsetTop = $this.offset().top;
-          if (scrolled + win_height_padded < offsetTop) {
-            $(this).removeClass('animated show ' + $this.data('animation'))
-          }
-        });
-      }
-
-      revealOnScroll();
-    });
   </script>
 </body>
 </html>
