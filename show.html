@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
   <link rel="stylesheet" href="style/bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="javascript/modernizr-2.7.2.js"></script>
+  <script type="text/javascript" src="javascript/jquery.SuperSlide.2.1.1.js"></script>
   <script type="text/javascript" src="javascript/application.js"></script>
+
 </head>
 <body>
-  <div class="logo"><img src="images/logo.png" alt="" class="logo-black"></div>
+  <div class="logo"><img src="images/logo.png" alt=""></div>
   <!-- ============ nav ============ -->
-  <div class="nav-button logo-black"> <!-- nav button -->
+  <div class="nav-button"> <!-- nav button -->
     <div>
       <span></span>
       <span></span>
@@ -49,36 +51,26 @@
       </ul>
   </div>
   <!-- ============ nav ============ -->
-  <div class="clr"></div>
 
-  <div class="work_case_title">
-    <img src="images/work_case.jpg" alt="">
+
+
+
+  <div class="work-show">
+    <img src="images/2.png" alt="" class="img-responsive">
   </div>
+  <img src="images/1.png" alt="" class="img-responsive">
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">VIS设计</div>
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">包装设计</div>
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center pull-left work_case_class">画册设计</div>
-  <div class="clr"></div>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a href="show.html" class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden work_case_img"><img src="images/1.jpg" alt="" class="img-responsive"></a>
-  <a class="col-lg-4 col-md-4 col-sm-4 col-xs-6 pull-left overHidden add_img">
-    <div style="width:100%;height:100%;display:table">
-      <div style="display:table-cell;vertical-align:middle;">
-        <img src="images/1.gif" alt="">
-        <div class="text-center text">点击加载更多案例</div>
-        <span class="line-1"></span>
-        <span class="line-2"></span>
-      </div>
+  <div class="fullSlide">
+    <a class="prev"></a>
+    <a class="next"></a>
+    <div class="bd">
+      <ul>
+        <li style="background:url(images/3.jpg) center 0 no-repeat;"></li>
+        <li style="background:url(images/3.jpg) center 0 no-repeat;"></li>
+        <li style="background:url(images/3.jpg) center 0 no-repeat;"></li>
+      </ul>
     </div>
-  </a>
-  <div class="clr"></div>
+  </div>
 
   <div class="index-content text-center">
     <img src="images/index-content.png" alt="" class="revealOnScroll" data-animation="fadeInUp" data-timeout="500">
@@ -101,6 +93,8 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript">
+    jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+    </script>
 </body>
 </html>
