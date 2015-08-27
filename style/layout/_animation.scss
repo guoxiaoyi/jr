@@ -69,6 +69,18 @@
     background-color:#000;
   }
 }
+@-webkit-keyframes img{
+  100%{
+   -webkit-filter: invert(1);
+           filter: invert(1);
+  }
+}
+@keyframes img{
+  100%{
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+}
 @-webkit-keyframes WorkCase{
   100%{
     filter:grayscale(0);
@@ -97,5 +109,17 @@
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  }
+}
+@-webkit-keyframes WorkCaseNav{
+  100%{
+    background-color:#ff4059;
+    color:#FFF;
+  }
+}
+@keyframes WorkCaseNav{
+  100%{
+    background: #ff4059;
+    color:#FFF;
   }
 }

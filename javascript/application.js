@@ -47,4 +47,8 @@ jQuery(document).ready(function($) {
 
       revealOnScroll();
     });
+
+    $(".logo").click(function(event) {
+      location.href='index.html';
+    });
 });

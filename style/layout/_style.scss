@@ -153,9 +153,11 @@ ul{margin:0px;padding:0px;}
     height: 60px;
     cursor: pointer;
     background:url(../images/nav/close.png) center center no-repeat #fff;
+    &:hover{
+      -webkit-animation: img 0.5s linear forwards;
+    }
   }
   ul {
-    // width: 83%;
     height:90%;
     overflow: hidden;
     margin:0 auto;
@@ -188,6 +190,9 @@ ul{margin:0px;padding:0px;}
       &:hover{
         .border{
           -webkit-animation: BorderBlack 0.5s linear forwards;
+          img.title-en, img.title-zn {
+            -webkit-animation: img 0.5s linear forwards;
+          }
         }
         .line{
           -webkit-animation: NavLine 0.5s linear;
@@ -314,25 +319,53 @@ ul{margin:0px;padding:0px;}
   color:#6c6c6c;
   font-size: 22px;
   border-right:1px solid #373737;
+  display: block;
+
   &:last-child{
     border-right:none;
   }
   &:hover{
-    -webkit-animation: BorderBlack 0.5s linear forwards;
+    -webkit-animation: WorkCaseNav 0.5s linear forwards;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
 .img-responsive{
   width:100%;
 }
-.work_case_img img{
+.work_case_img {
+  .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: 4;
+    padding: 6.67% 10%;
+    h4, h3,p{margin-top:0px;margin-bottom:0px;}
+    h4{
+      color:#FFF;
+      font-weight: bold;
+    }
+    h3{
+      color:#fd4655;
+    }
+    p{
+      color:#b0aeae;
+    }
+  }
+  img{
    -webkit-filter:grayscale(1);
            filter:grayscale(1);
-  &:hover{
+    &:hover{
     -webkit-animation: WorkCase 1s linear forwards;
+            animation: WorkCase 1s linear forwards;
+    }
   }
 }
 
 .ceo-img{
+  height:100%;
   img{
   max-width: 590px;
   width:100%;
@@ -373,6 +406,7 @@ ul{margin:0px;padding:0px;}
   width:80%;
   max-width: 1170px;
   margin:0 auto;
+  margin-top: 60px;
   height:602px;
   position: relative;
   .bd{
@@ -434,6 +468,7 @@ ul{margin:0px;padding:0px;}
   transition: 0.4s;
 }
 .add_img{
+  cursor: pointer;
   &:hover{
     .line-1{
       margin-top: 25px;
