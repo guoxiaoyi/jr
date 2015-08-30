@@ -129,6 +129,10 @@ ul{margin:0px;padding:0px;}
   top: 5%;
   z-index: 100;
   left: (1920 / 60)*0.1%;
+  &:hover{
+    cursor: pointer;
+    -webkit-animation: shake 0.5s linear forwards;
+  }
 }
 .nav{
   overflow: hidden;
@@ -291,9 +295,15 @@ ul{margin:0px;padding:0px;}
 .contact_03{
   margin:70px 0px;
 }
-.contact-left .text-right{
-  img{
-    margin-right: 20px;
+.contact-left {
+  .img-responsive{
+    max-width:600px;
+    float: right;
+  }
+  .text-right{
+    img{
+      margin-right: 20px;
+    }
   }
 }
 .contact-right{

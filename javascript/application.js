@@ -47,8 +47,9 @@ jQuery(document).ready(function($) {
 
       revealOnScroll();
     });
-
+    $(".logo").addClass('animated show');
     $(".logo").click(function(event) {
+
       location.href='index.html';
     });
 });
